@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="generator">
+    <h2>Password Generator</h2>
+
+    <!-- Dark Mode Toggle -->
+    <button onclick="toggleDarkMode()">Dark Mode</button><br><br>
+
+    <!-- Auto-Generate Toggle -->
+<label>
+    <input type="checkbox" id="autoGenerate" checked>
+    Auto-Generate
+  </label><br><br>
+  
+
+    <!-- Password length input -->
+    <label for="length">Length:</label>
+    <input type="number" id="length" min="4" max="50" value="12"><br><br>
+
+    <!-- Character type checkboxes -->
+    <label><input type="checkbox" id="includeLower" checked> Lowercase</label><br>
+    <label><input type="checkbox" id="includeUpper" checked> Uppercase</label><br>
+    <label><input type="checkbox" id="includeNumbers" checked> Numbers</label><br>
+    <label><input type="checkbox" id="includeSymbols" checked> Symbols</label><br><br>
+
+    <!-- Generate button -->
+    <button onclick="generatePassword()">Generate</button>
+
+    <!-- Output display -->
+    <div class="output" id="passwordOutput">Your password will appear here</div>
+
+    <!-- Password Strength Indicator -->
+    <div id="strengthIndicator">Strength: </div>
+
+    <!-- Copy button -->
+    <button onclick="copyToClipboard()">Copy</button>
+
+    <!-- Password History -->
+    <h3>Password History</h3>
+    <ul id="historyList"></ul>
+
+    <!-- Clear History button -->
+    <button onclick="clearHistory()">Clear History</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Toast Notification -->
+<div id="toast">Password copied to clipboard!</div>
+</body>
+</html>
+
+
