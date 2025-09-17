@@ -25,4 +25,4 @@ Built with **HTML, CSS, and JavaScript**.
 ## 📦 Installation & Usage
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/password-generator.git
+   git clone https://github.com/Adundo-T/password-generator.git
